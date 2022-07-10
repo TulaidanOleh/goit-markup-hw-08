@@ -22,13 +22,13 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__flex">
         <nav class="nav__flex">
           <a class="logo link" href="./">
             Web<span class="logo--black">Studio</span>
           </a>
-          <ul class="header__list">
+          <ul class="nav__ul">
             <li class="nav__list list">
               <a class="nav__link curennt link" href="./">Студия</a>
             </li>
@@ -41,10 +41,10 @@
           </ul>
         </nav>
 
-        <ul class="header__list">
+        <ul class="contact__ul">
           <li class="logo__list list">
             <a class="header__link link" href="mailto:info@devstudio.com">
-              <svg class="header__icon link" width="16" height="12">
+              <svg class="header__icon header__icon--envelope link">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -53,15 +53,108 @@
 
           <li class="logo__list list">
             <a class="header__link link" href="tel:+380961111111">
-              <svg class="header__icon link" width="10" height="16">
+              <svg
+                class="header__icon header__icon--smartfone link"
+                width="10"
+                height="16"
+              >
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button class="menu__btn mobile__open" type="button">
+          <svg
+            width="40"
+            height="40"
+            aria-label="
+          Перуключатель мобильного меню"
+          >
+            <use href="./images/icons.svg#mobile-open"></use>
+          </svg>
+        </button>
+        <div class="mobile__menu is-hidden">
+          <button class="menu__btn mobile__close" type="button">
+            <svg
+              width="40"
+              height="40"
+              aria-label="
+            Перуключатель мобильного меню"
+            >
+              <use href="./images/icons.svg#mobile-close"></use>
+            </svg>
+          </button>
+          <div class="container">
+            <div class="mobil-menu__wrap">
+              <ul class="mobile__ul">
+                <li class="mobile__list list">
+                  <a class="mobile__link curennt link" href="./">Студия</a>
+                </li>
+                <li class="mobile__list list">
+                  <a class="mobile__link link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile__list list">
+                  <a class="mobile__link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobil-menu__wrap">
+              <ul class="mobile__ul">
+                <li class="mobile__list list">
+                  <a
+                    class="mobile__link mobile__link--number link"
+                    href="tel:+380961111111"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile__list list">
+                  <a
+                    class="mobile__link mobile__link--mail link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="soc-network__ul">
+                <li class="soc-network__list list">
+                  <a
+                    class="soc-network__link link"
+                    href="https://www.instagram.com/"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="soc-network__list list">
+                  <a
+                    class="soc-network__link link"
+                    href="https://twitter.com/?lang=uk"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="soc-network__list list">
+                  <a
+                    class="soc-network__link link"
+                    href="https://uk-ua.facebook.com/"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="soc-network__list list">
+                  <a
+                    class="soc-network__link link"
+                    href="https://www.linkedin.com/"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -129,7 +222,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="services">
+      <section class="services">
         <div class="container">
           <h2 class="section__header">Чем мы занимаемся</h2>
           <ul class="services__ul">
@@ -163,7 +256,7 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section>
       <section class="team">
         <div class="container">
           <h2 class="section__header">Наша команда</h2>
@@ -379,7 +472,7 @@
           </ul>
         </div>
       </section>
-       <section class="client">
+      <section class="client">
         <div class="container">
           <h2 class="section__header">Постоянные клиенты</h2>
           <ul class="client__ul list">
@@ -427,10 +520,10 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__flex">
         <div class="address__flex">
           <a class="logo link logo__footer" href="./"
@@ -525,8 +618,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn__close btn" data-modal-close>
           <svg width="11" height="11">
@@ -602,7 +695,8 @@
           <button type="submit" class="btn__base btn">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

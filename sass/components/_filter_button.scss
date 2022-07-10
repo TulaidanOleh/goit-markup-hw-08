@@ -23,13 +23,25 @@
 
 .filter__ul {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__list {
   margin-right: 8px;
+  margin-bottom: 15px;
   &:last-child {
     margin-right: 0;
+  }
+  @include tablet {
+    margin-bottom: 0;
   }
 }

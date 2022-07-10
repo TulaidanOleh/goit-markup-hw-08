@@ -28,13 +28,27 @@ address {
 }
 
 .footer__flex {
-  display: flex;
-  align-items: baseline;
   outline: transparent;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .address__flex {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+  @include desktop {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
 }
 
 .footer__text {
@@ -45,18 +59,20 @@ address {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  text-align: center;
   color: var(--color-basic);
 
   margin-bottom: 20px;
 }
 
 .footer__wrap {
-  margin-right: auto;
+  margin-bottom: 60px;
 }
 
 .footer__form {
-  display: flex;
+  @include desktop {
+    display: flex;
+  }
 }
 
 .footer__email {
@@ -66,17 +82,25 @@ address {
   background-color: transparent;
   padding: 16px 15px;
   box-sizing: border-box;
-  width: 358px;
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
-
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25px;
-
+  display: inline-block;
   letter-spacing: 0.03em;
 
   color: var(--color-footer-link);
+
+  @include mobile {
+    width: 450px;
+  }
+  @include desktop {
+    width: 385px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__icon {

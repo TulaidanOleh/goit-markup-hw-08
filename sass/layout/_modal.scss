@@ -7,10 +7,20 @@
   transition-property: opacity, visibility;
   transition-timing-function: cubic-bezier(var(--cubic-bezier-basic));
   transition-duration: var(--timing-function-basic);
+  overflow-y: auto;
 }
 
 .modal {
-  width: 528px;
+  width: calc(100% - 15px);
+
+  @include mobile {
+    width: 450px;
+  }
+
+  @include desktop {
+    width: 528px;
+  }
+
   min-height: 581px;
   background-color: var(--color-basic);
   box-sizing: border-box;
@@ -50,10 +60,15 @@
 
 .modal__title {
   font-weight: 700;
+
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+  @include desktop {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 
   margin-bottom: 12px;
   color: var(--color-taxt-header);
@@ -137,8 +152,13 @@
 
 .checkbox__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   letter-spacing: 0.03em;
   color: var(--color-taxt-basic);

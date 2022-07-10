@@ -1,20 +1,20 @@
 .link:focus,
 .link:hover {
-    color: var(--color-hover);
+  color: var(--color-hover);
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .btn {
-    cursor: pointer;
-    border-color: transparent;
-    border-radius: 4px;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
 }
 
 p,
@@ -24,19 +24,25 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 ul,
 ol {
-    margin: 0;
-    padding-left: 0;
+  margin: 0;
+  padding-left: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
+.no-scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
