@@ -1,0 +1,27 @@
+.logo--white {
+  color: var(--color-basic);
+}
+
+.logo--black {
+  color: var(--color-taxt-header);
+}
+
+.logo {
+  margin-right: 50px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-hover);
+}
+
+.logo__footer {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}

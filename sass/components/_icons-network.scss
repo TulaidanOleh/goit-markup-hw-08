@@ -1,0 +1,52 @@
+.ul__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__icon {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon--color__basic {
+  fill: var(--color-basic);
+}
+
+.icon--currentColor {
+  fill: currentColor;
+}
+
+.link__icon--background__color {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link__icon--color {
+  color: var(--color-icon);
+}
+
+.link__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: color, background-color;
+  transition-timing-function: var(--cubic-bezier-basic);
+  transition-duration: var(--timing-function-basic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-hover);
+    color: var(--color-basic);
+  }
+}

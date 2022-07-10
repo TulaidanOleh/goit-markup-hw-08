@@ -1,0 +1,42 @@
+.link:focus,
+.link:hover {
+    color: var(--color-hover);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.btn {
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
