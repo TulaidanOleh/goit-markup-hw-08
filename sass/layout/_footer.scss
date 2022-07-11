@@ -19,12 +19,15 @@ address {
 }
 
 .address__link {
-  color: var(--color-footer-link);
   display: block;
 
   transition-property: color;
   transition-timing-function: var(--cubic-bezier-basic);
   transition-duration: var(--timing-function-basic);
+}
+
+.address__link--grey {
+  color: var(--color-footer-link);
 }
 
 .footer__flex {

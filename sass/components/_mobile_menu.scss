@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     padding: 48px 40px;
   }
 }
@@ -51,6 +51,7 @@
 
 .soc-network__ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .soc-network__list:not(:last-child) {
   margin-right: 20px;
