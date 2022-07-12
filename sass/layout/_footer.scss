@@ -37,11 +37,11 @@ address {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   @include desktop {
     display: flex;
-    align-items: baseline;
   }
 }
 

@@ -41,12 +41,16 @@
 }
 
 .logo__list {
+  margin-bottom: 10px;
+
   @include desktop {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -99,11 +103,11 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  margin-bottom: 10px;
+  color: var(--color-taxt-basic);
+
   @include desktop {
     font-size: 14px;
     line-height: 1.14;
-    margin-bottom: 0;
   }
 }
 .header__link,
@@ -121,13 +125,28 @@
     margin-right: 0;
   }
 }
+.header__link--pading__top {
+  @include tablet {
+    padding-top: 20px;
+  }
 
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.header__link--pading__bottom {
+  @include tablet {
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
 .nav__link {
   color: var(--color-taxt-header);
-}
-
-.header__link {
-  color: var(--color-taxt-basic);
 }
 
 .menu__btn {
@@ -148,8 +167,8 @@
     display: none;
   }
 
-  & :focus,
-  & :hover {
+  &:focus,
+  &:hover {
     fill: var(--color-hover);
   }
 }
