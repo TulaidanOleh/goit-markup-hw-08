@@ -35,7 +35,6 @@
 }
 
 .feature__ul {
-  margin-bottom: -30px;
   @include tablet {
     display: flex;
     flex-wrap: wrap;
@@ -44,10 +43,8 @@
 }
 
 .feature__list {
-
   @media screen and (max-width: 1200px) {
     margin-bottom: 30px;
-    
   }
 
   @include tablet {
@@ -78,5 +75,4 @@
   line-height: 1.71;
   color: var(--color-taxt-basic);
   letter-spacing: 0.03em;
- 
 }

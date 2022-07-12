@@ -50,7 +50,7 @@ address {
   text-align: center;
   @include desktop {
     margin-bottom: 0;
-    margin-right: 70px;
+    margin-right: auto;
   }
 }
 
@@ -63,6 +63,9 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+  @include desktop {
+    text-align: left;
+  }
   color: var(--color-basic);
 
   margin-bottom: 20px;
@@ -70,6 +73,10 @@ address {
 
 .footer__wrap {
   margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
 }
 
 .footer__form {

@@ -47,9 +47,12 @@
   color: var(--color-basic);
   background-color: rgba(33, 150, 243, 0.9);
 
-  padding: 63px 24px;
+  padding: 5px 24px;
+  @media screen and (min-width: 350px) {
+    padding: 63px 24px;
+  }
   height: 100%;
-
+  overflow-y: scroll;
   position: absolute;
   top: 0;
   transform: translateY(100%);
