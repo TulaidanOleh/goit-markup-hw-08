@@ -860,11 +860,17 @@ body {
   .feature__list {
     margin-bottom: 30px;
   }
+  .feature__list:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .feature__list {
     width: calc(50% - 30px);
     margin-left: 30px;
+  }
+  .feature__list:nth-last-of-type(-n + 2) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -986,11 +992,17 @@ body {
   .team__list {
     margin-bottom: 30px;
   }
+  .team__list:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__list {
     width: calc(50% - 30px);
     margin-left: 30px;
+  }
+  .team__list:nth-last-of-type(-n + 2) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1132,6 +1144,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .address__flex {
+    text-align: left;
     margin-bottom: 0;
     margin-right: auto;
   }

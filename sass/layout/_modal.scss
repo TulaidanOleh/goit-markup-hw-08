@@ -215,6 +215,7 @@
 .modal__check:focus + .checkbox__text span {
   border: 2px solid var(--color-hover);
 }
+
 .modal__check:not(:checked) + .checkbox__text span {
   border: 2px solid var(--color-taxt-header);
 }
